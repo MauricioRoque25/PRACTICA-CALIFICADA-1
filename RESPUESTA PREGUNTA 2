@@ -1,0 +1,32 @@
+#RESPUESTA A PREGUNTA 2
+
+## Primera base de datos
+Esta base de datos se seleccionó en base a las 50 ciudades con mayor casos de homicidios en el año 2018. Esta base tiene 50 observaciones de 6 variables. En esta 
+base la ciudad que se selecciona como la más peligrosa es la ciudad de Tijuana con 2640 casos de homicidio. 
+
+
+
+## Segunda base de datos
+Esta base de datos se seleccionó en base a las 50 ciudades con mayor casos de homicidios en el año 2019. Esta base tiene 50 observaciones de 6 variables. En esta 
+base la ciudad que se selecciona como la más peligrosa es la ciudad de Tijuana nuevamente, con 2367 casos de homicidio.
+
+
+
+## Tercera base de datos 
+Esta base de datos se seleccionó en base a las 50 ciudades con mayor casos de homicidios en el año 2020. Esta base tiene 50 observaciones de 6 variables. En esta 
+base la ciudad que se selecciona como la más peligrosa es la ciudad de Celaya, con 699 casos de homicidio.
+
+
+
+## Cuarta base de datos
+La razón por la cual seleccioné esta base, es debido a que una vez visto los cuadros sobre las 50 ciudades con más casos de homicidios se observa que el país que
+tiene más ciudades en esta lista es Mexico. Y un punto a resaltar es que una ciudad que en los últimos años está siempre entre las 3 ciudades con más casos de 
+homicidios es la ciudad de Tijuana, razón por la cual se realizó una base con las autoridades que están a cargo de la ciudad de Tijuana.
+
+
+
+## Notas
+Si bien es cierto estas ciudades son identificadas como las más peligrosas año tras año, algo importante a señalar es que hay otras ciudades con muchos más casos
+de homicidio que las que se encuentran primero en las listas. Sino que la posición en este ranking es en base a los homicidios cada 100 000 habitantes, razón por la
+cual otras ciudades con más casos de homicidio no están entre los primeras posiciones de ciudades más peligrosas por casos de homicidio.
+Encontramos que la base con mayor número de casos es la primera que aperturamos, la de las autoridades de la ciudad de Tijuana 
