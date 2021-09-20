@@ -1,0 +1,59 @@
+
+### Primera base (htmltab) "Tasa de homicidios en las ciudades más peligrosas (2018)"
+```{r}
+library(htmltab)
+link="https://es.wikipedia.org/wiki/Anexo:Ciudades_por_tasa_de_homicidio_intencional"
+path="/html/body/div[3]/div[3]/div[5]/div[1]/table[4]"
+Homicidios2018=htmltab(link,path)
+```
+
+
+
+### Segunda base (htmltab) "Tasa de homicidios en las ciudades más peligrosas (2019)"
+```{r}
+link="https://es.wikipedia.org/wiki/Anexo:Ciudades_por_tasa_de_homicidio_intencional"
+path="/html/body/div[3]/div[3]/div[5]/div[1]/table[3]"
+Homicidios2019=htmltab(link,path)
+```
+
+
+
+### Tercera base (htmltab) "Tasa de homicidios en las ciudades más peligrosas (2020)"
+```{r}
+link="https://es.wikipedia.org/wiki/Anexo:Ciudades_por_tasa_de_homicidio_intencional"
+path="/html/body/div[3]/div[3]/div[5]/div[1]/table[2]"
+Homicidios2020=htmltab(link,path)
+```
+
+
+### Cuarta base (rvest) "Autoridades de Tijuana"
+```{r}
+library(rvest)
+url="https://www.tijuana.gob.mx/directorio/"
+pagina_web=read_html(url)
+```
+
+
+*Hacemos primero para los nombres*
+```{r}
+css_nombre="div.nombre"
+nombre_html<-html_nodes(pagina_web,css_nombre)
+nombre_texto<-html_text(nombre_html)
+head(nombre_texto)
+```
+
+
+*Hacemos ahora para el cargo*
+```{r}
+css_cargo= "div.cargo"
+cargo_html<-html_nodes(pagina_web,css_cargo)
+cargo_texto<-html_text(cargo_html)
+head(cargo_texto)
+```
+
+
+*Finalmente armamos la base de datos*
+```{r}
+dataADT<-data.frame(NOMBRE=nombre_texto,CARGO=cargo_texto)
+head(dataADT)
+```
